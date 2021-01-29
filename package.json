@@ -1,0 +1,19 @@
+{
+  "name": "priyank_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppatel08/priyank_portfolio.git"
+  },
+  "author": "Priyank Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppatel08/priyank_portfolio/issues"
+  },
+  "homepage": "https://github.com/ppatel08/priyank_portfolio#readme"
+}
