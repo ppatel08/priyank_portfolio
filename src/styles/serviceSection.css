@@ -1,0 +1,54 @@
+.ServicesSection .service {
+	width: 95%;
+	background-color: #191d2b;
+	border-left: 1px solid #2e344e;
+	border-right: 1px solid #2e344e;
+	border-bottom: 1px solid #2e344e;
+	border-top: 8px solid #2e344e;
+	transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 1400px) {
+	.ServicesSection .service {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+}
+.ServicesSection .service:hover {
+	border-top: 8px solid #037fff;
+}
+.ServicesSection .service .service-content {
+	padding: 1rem;
+}
+.ServicesSection .service .service-content .s-title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	position: relative;
+	padding-bottom: 1rem;
+	margin: 1rem 0;
+}
+.ServicesSection .service .service-content .s-title::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 30%;
+	height: 1px;
+	background-color: #2e344e;
+}
+.servives-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 4rem;
+	margin-bottom: 11px;
+}
+
+.ServicesSection {
+	margin-bottom: 21px;
+}
+@media screen and (max-width: 1400px) {
+	.servives-container {
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+}

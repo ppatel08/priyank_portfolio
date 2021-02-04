@@ -1,10 +1,10 @@
 import { Route, Switch } from "react-router-dom";
-import Home from './components/Home'
-import About from './components/About'
-import SinglePost from './components/SinglePost'
-import Posts from './components/Posts'
-import Project from './components/Project'
-import Navbar from './components/Navbar';
+import Home from './pages/Home'
+import About from './pages/About'
+import SinglePost from './pages/SinglePost'
+import Posts from './pages/Posts'
+import Project from './pages/Project'
+import Navbar from './pages/Navbar';
 import "./styles/app.css"
 
 function App() {
