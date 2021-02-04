@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from "../components/Title"
 import ImageSection from '../components/ImageSection';
-import SkillsSection from '../components/SkillsSection';
+// import SkillsSection from '../components/SkillsSection';
 import ServicesSection from './../components/ServicesSection';
 
 import "../styles/about.css"
