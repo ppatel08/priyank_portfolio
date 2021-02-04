@@ -1,10 +1,10 @@
 import React from 'react'
 import Title from "../components/Title"
 import ImageSection from '../components/ImageSection';
-// import SkillsSection from '../components/SkillsSection';
-import ServicesSection from './../components/ServicesSection';
+import SkillsSection from '../components/SkillsSection';
 
 import "../styles/about.css"
+import ServicesSection from './../components/ServicesSection';
 
 function About() {
     return (
@@ -30,15 +30,6 @@ function About() {
                     text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
                 />
                 <ServicesSection image="https://picsum.photos/100" title={'Artificial Intelligence'}
-                    text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
-                />
-                <ServicesSection image="https://picsum.photos/100" title={'Game Development'}
-                    text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
-                />
-                <ServicesSection image="https://picsum.photos/100" title={'Game Development'}
-                    text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
-                />
-                <ServicesSection image="https://picsum.photos/100" title={'Game Development'}
                     text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
                 />
                 <ServicesSection image="https://picsum.photos/100" title={'Game Development'}

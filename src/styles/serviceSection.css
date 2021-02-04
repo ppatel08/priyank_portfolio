@@ -37,10 +37,10 @@
 }
 .servives-container {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 4rem;
 	margin-bottom: 11px;
+	width: 114%;
 }
 
 .ServicesSection {
