@@ -23,21 +23,20 @@ function About() {
                 <SkillsSection skill={'UI/Ux Design'} progress={'76%'} width={'76%'} />
             </div> */}
 
-            <Title title={'Services'} span={'Services'} />
+            <Title title={'Experience'} span={'Experience'} />
             <div className="servives-container">
-                <ServicesSection image="https://picsum.photos/100" title={'Web design'}
+                <ServicesSection title={'Wordpress'}
                     text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
                 />
-                <ServicesSection image="https://picsum.photos/100" title={'Artificial Intelligence'}
+                <ServicesSection title={'Desingning'}
                     text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
                 />
-                <ServicesSection image="https://picsum.photos/100" title={'Game Development'}
+                <ServicesSection title={'Prototype'}
                     text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
                 />
-
-
+                <ServicesSection title={'Single Page Application'}
+                    text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
             </div>
-
         </div >
     )
 }

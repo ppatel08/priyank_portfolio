@@ -2,7 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from './pages/Home'
 import About from './pages/About'
 import SinglePost from './pages/SinglePost'
-import Posts from './pages/Posts'
+import Portfolio from './pages/Portfolio'
 import Project from './pages/Project'
 import Navbar from './pages/Navbar';
 import "./styles/app.css"
@@ -26,7 +26,7 @@ function App() {
               <Route component={Home} path='/' exact />
               <Route component={About} path='/about' />
               <Route component={SinglePost} path='/post/:slug' />
-              <Route component={Posts} path='/posts' />
+              <Route component={Portfolio} path='/portfolio' />
               <Route component={Project} path='/project' />
             </Switch>
           </div>
