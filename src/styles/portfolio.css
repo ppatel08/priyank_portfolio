@@ -1,4 +1,33 @@
-.test {
-	color: white;
-	text-decoration: none;
+/* div .portfolio {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.service {
+	padding: 4rem;
+
+	margin: 1rem 1rem 0rem 1rem;
+	flex-basis: 25rem;
+	flex-grow: 1;
+	background-color: #191d2b;
+}
+
+.service.service:last-of-type {
+	margin-bottom: 1rem;
+} */
+
+.portfolio {
+	display: flex;
+	justify-content: start;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.service {
+	padding: 4rem;
+	margin: 3rem 2rem 0rem 0rem;
+	flex-basis: 25rem;
+	flex-grow: 1;
+	background-color: #191d2b;
 }
