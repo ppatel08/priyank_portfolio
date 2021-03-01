@@ -57,10 +57,16 @@ function Portfolio() {
             <div className="portfolio">
                 {postData && postData.map((post, index) => {
                     return (
-                        <div className="service portfolio__service-1">
-                            <h3 className="serviceTitle">Service1</h3>
-                            <p>Some kind of paragraph agraph agraph agraph agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agh agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph agraph to be adjustable</p>
-                        </div>
+                        <>
+
+                            <div className="service">
+                                <span className="portfoliolable">{post.title}</span>
+                                <h3 className="portfolioHeaderTitle">Dental Mobile LLC</h3>
+                                <p className="portfolioDescription">Some kind of wording that will make sense</p>
+                                <button className="btn">Learn More</button>
+                            </div>
+
+                        </>
                     )
                 })}
             </div>
