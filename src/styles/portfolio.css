@@ -1,26 +1,6 @@
-/* div .portfolio {
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.service {
-	padding: 4rem;
-
-	margin: 1rem 1rem 0rem 1rem;
-	flex-basis: 25rem;
-	flex-grow: 1;
-	background-color: #191d2b;
-}
-
-.service.service:last-of-type {
-	margin-bottom: 1rem;
-} */
-
 .portfolio {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: stretch;
 	flex-wrap: wrap;
 }
@@ -30,6 +10,14 @@
 	flex-basis: 25rem;
 	flex-grow: 1;
 	background-color: #191d2b;
+	border-top: 5px solid #191b24;
+	cursor: pointer;
+}
+
+.service:hover {
+	border-top: 5px solid #037fff;
+	transition: 0.5s ease;
+	width: 10px;
 }
 
 .portfoliolable {
@@ -48,4 +36,5 @@
 .btn {
 	padding: 8px;
 	border-radius: 2px;
+	text-decoration: none;
 }
