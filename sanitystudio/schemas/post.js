@@ -7,6 +7,7 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required().min(10).max(80)
     },
     {
       name: 'slug',
@@ -30,10 +31,17 @@ export default {
       type: 'datetime',
     },
     {
+      name: 'smallDescription',
+      title: 'Small Description',
+      type: 'string',
+      validation: Rule => Rule.required().min(2).max(73)
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
     },
+
   ],
 
   preview: {

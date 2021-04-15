@@ -14,6 +14,7 @@ function Portfolio() {
             .fetch(`*[_type =="post"]{
              title,
              slug,
+             smallDescription,
              mainImage{
                  asset-> {
                      _id,
@@ -30,14 +31,25 @@ function Portfolio() {
             <Title title={'Portfolio'} span={'Portfolio'} />
             <div className="portfolio">
                 {postData && postData.map((post, index) => {
+                    console.log(post)
                     return (
-                        <div className="service">
-                            <span className="portfoliolable">{post.title}</span>
-                            <h3 className="portfolioHeaderTitle">Dental Mobile LLC</h3>
-                            <p className="portfolioDescription">Some kind of wording that will make sense</p>
-                            <Link to={"/portfolio/" + post.slug.current} key={post.slug.current}> <button className="btn">
-                                Learn More</button></Link>
-                        </div>
+                        <>
+                            <div className="service">
+                                <div className="firstdiv">
+                                    <h3 className="portfolioHeaderTitle">{post.title}</h3>
+                                    <p className="portfolioDescription">{post.smallDescription}</p>
+                                </div>
+
+                                <div className="secondDiv">
+                                    <Link to={"/portfolio/" + post.slug.current} key={post.slug.current}>
+                                        <button className="btn">
+                                            Learn More</button>
+                                    </Link>
+                                </div>
+
+
+                            </div>
+                        </>
                     )
                 })}
             </div>
