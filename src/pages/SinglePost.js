@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 import imageURLBuilder from "@sanity/image-url"
 import sanityClient from './../client';
@@ -14,6 +14,8 @@ function SinglePost() {
 
     const [singlePost, setsinglePost] = useState(null);
     const { slug } = useParams();
+    const history = useHistory()
+
 
     useEffect(() => {
         sanityClient.fetch(`*[slug.current == "${slug}"]
@@ -26,11 +28,21 @@ function SinglePost() {
             .catch(console.error)
     }, [slug]);
 
+
+    const goBack = () => {
+        history.goBack()
+    }
+
+
     if (!singlePost) return <div>Loading...</div>
 
     return (
-        <p>{singlePost.title}</p>
-
+        <>
+            <p>{singlePost.title}</p>
+            <button type="button" onClick={goBack}>
+                Go back
+  </button>
+        </>
     )
 }
 
