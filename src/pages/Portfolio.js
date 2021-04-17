@@ -26,8 +26,9 @@ function Portfolio() {
             .then((data) => setPost(data))
             .catch(console.error)
     }, [])
+
     return (
-        <>
+        <p>
             <Title title={'Portfolio'} span={'Portfolio'} />
             <div className="portfolio">
                 {postData && postData.map((post, index) => {
@@ -53,7 +54,7 @@ function Portfolio() {
                     )
                 })}
             </div>
-        </>
+        </p>
     )
 }
 
