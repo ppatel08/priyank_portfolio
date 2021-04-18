@@ -5,6 +5,8 @@ import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import "../styles/home.css"
+import Typed from 'react-typed';
+
 
 function HomePage() {
     return (
@@ -12,7 +14,12 @@ function HomePage() {
             <header className="hero">
                 <h1 className="hero-text">
                     Hi, I am
-                    <span> Priyank Patel.</span>
+                    {' '}
+                    <Typed
+                        strings={['Priyank Patel']}
+                        backSpeed={50}
+                        typeSpeed={40}
+                    />
                 </h1>
                 <p className="h-sub-text">
                     Front end Developer from Detroit.
