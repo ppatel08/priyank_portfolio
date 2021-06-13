@@ -39,6 +39,8 @@ function ServicesSection() {
                     </div>
                 )
             })}
+
+            {!projectData && <div>Loading Experience Data....</div>}
         </div>
 
     )

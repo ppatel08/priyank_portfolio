@@ -48,11 +48,12 @@ function Portfolio() {
                                     </Link>
                                 </div>
 
-
                             </div>
                         </>
                     )
                 })}
+                {!postData && <div>Loading Portfolio Data....</div>}
+
             </div>
         </p>
     )
